@@ -135,15 +135,6 @@ public class Queries {
 	 */
 	protected static Shift findShiftByTime(Calendar time) {
 		//TODO Complete this method
-//		for (Shift sh : data.getShifts().values()) {
-//			if (sh.startingTime.before(time))
-//				continue;
-//			if (sh.endTime().after(time))
-//				continue;
-//			return sh;
-//		}
-//		return null;
-		
 		for (Shift s : data.getShifts().values()) {
 			if (s.startingTime.compareTo(time) <= 0 && s.endTime().compareTo(time) > 0)
 				return s;
@@ -245,7 +236,7 @@ public class Queries {
 			@Override
 			public int compare(ProductionPlanType o1, ProductionPlanType o2) {
 				// TODO Auto-generated method stub
-				return ((Integer)o1.numberOfSlots).compareTo(o1.numberOfSlots);
+				return ((Integer)o1.numberOfSlots).compareTo(o2.numberOfSlots);
 			}
 		});
 		result.addAll(data.getProductionPlanTypes().values());
