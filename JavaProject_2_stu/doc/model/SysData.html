@@ -1,0 +1,1257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+
+<title>SysData</title>
+<meta name="date" content="2017-06-02">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SysData";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SysData.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-files/index-1.html">Index</a></li>
+<li><a href="../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../model/Slot.html" title="class in model"><span class="strong">Prev Class</span></a></li>
+<li><a href="../model/Vehicle.html" title="class in model"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../index.html?model/SysData.html" target="_top">Frames</a></li>
+<li><a href="SysData.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">model</div>
+<h2 title="Class SysData" class="title">Class SysData</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>model.SysData</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SysData</span>
+extends java.lang.Object</pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Java spring 2017</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.String,<a href="../model/AbstractEmployee.html" title="class in model">AbstractEmployee</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#employees">employees</a></strong></code>
+<div class="block">Employees list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="../model/SysData.html" title="class in model">SysData</a></code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#instance">instance</a></strong></code>
+<div class="block">SysData Singleton instance</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.String,<a href="../model/Manufacturer.html" title="class in model">Manufacturer</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#manufacturers">manufacturers</a></strong></code>
+<div class="block">Manufacturers list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.String,<a href="../model/VehicleModel.html" title="class in model">VehicleModel</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#models">models</a></strong></code>
+<div class="block">Vehicle models list</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/Order.html" title="class in model">Order</a>&lt;?,?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#orders">orders</a></strong></code>
+<div class="block">Orders list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/PartType.html" title="class in model">PartType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#parts">parts</a></strong></code>
+<div class="block">Part types list</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/ProductionPlan.html" title="class in model">ProductionPlan</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#productionPlans">productionPlans</a></strong></code>
+<div class="block">Production plans list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/ProductionPlanType.html" title="class in model">ProductionPlanType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#productionPlanTypes">productionPlanTypes</a></strong></code>
+<div class="block">Production plan types list</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.util.Calendar,<a href="../model/Shift.html" title="class in model">Shift</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#shifts">shifts</a></strong></code>
+<div class="block">Shift list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.String,<a href="../model/Vehicle.html" title="class in model">Vehicle</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#vehicles">vehicles</a></strong></code>
+<div class="block">Vehicles list</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/Warehouse.html" title="class in model">Warehouse</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#warehouses">warehouses</a></strong></code>
+<div class="block">Warehouses list</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.HashMap&lt;java.lang.Integer,<a href="../model/WorkStation.html" title="class in model">WorkStation</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#workStations">workStations</a></strong></code>
+<div class="block">Work stations list</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private </code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#SysData()">SysData</a></strong>()</code>
+<div class="block">SysData constructor</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addGuard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double, int)">addGuard</a></strong>(java.lang.String&nbsp;id,
+        java.lang.String&nbsp;name,
+        java.lang.String&nbsp;country,
+        java.lang.String&nbsp;city,
+        java.lang.String&nbsp;street,
+        int&nbsp;houseNumber,
+        java.lang.String&nbsp;zipCode,
+        java.util.Calendar&nbsp;birthday,
+        java.util.Calendar&nbsp;employmentDate,
+        double&nbsp;monthlySalary,
+        int&nbsp;warehouseNumber)</code>
+<div class="block">Adds a new guard to the system</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addManufacturer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, double)">addManufacturer</a></strong>(java.lang.String&nbsp;name,
+               java.lang.String&nbsp;country,
+               java.lang.String&nbsp;city,
+               java.lang.String&nbsp;street,
+               int&nbsp;houseNumber,
+               java.lang.String&nbsp;zipCode,
+               double&nbsp;profitPercentage)</code>
+<div class="block">Adds manufacturer to the system only if it doesn't exist yet</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addOrder(int, java.lang.String, java.lang.String, java.util.Calendar)">addOrder</a></strong>(int&nbsp;orderNumber,
+        java.lang.String&nbsp;orderedFrom,
+        java.lang.String&nbsp;orderedTo,
+        java.util.Calendar&nbsp;dueDate)</code>
+<div class="block">Adds order to the system only if it doesn't exists yet
+ Don't forget to retrieve the manufacturer</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addPartType(int, java.lang.String, utils.E_PartCategory, double)">addPartType</a></strong>(int&nbsp;partNumber,
+           java.lang.String&nbsp;partName,
+           <a href="../utils/E_PartCategory.html" title="enum in utils">E_PartCategory</a>&nbsp;category,
+           double&nbsp;productionCost)</code>
+<div class="block">Adds part type to the system only if it doesn't exists yet</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addProductionPlan(int, int)">addProductionPlan</a></strong>(int&nbsp;serialNumber,
+                 int&nbsp;typeSerialNumber)</code>
+<div class="block">Adds production plan to the system only if it doesn't exists yet
+ Don't forget to retrieve the Production plan type</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addProductionPlanType(int, int)">addProductionPlanType</a></strong>(int&nbsp;serialNumber,
+                     int&nbsp;numberOfSlots)</code>
+<div class="block">Adds production plan type to the system only if it doesn't exists yet</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addShift(java.util.Calendar, java.lang.String)">addShift</a></strong>(java.util.Calendar&nbsp;startingTime,
+        java.lang.String&nbsp;ShiftManagerId)</code>
+<div class="block">Adds shift to the system</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addShiftManager(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double, double)">addShiftManager</a></strong>(java.lang.String&nbsp;id,
+               java.lang.String&nbsp;name,
+               java.lang.String&nbsp;country,
+               java.lang.String&nbsp;city,
+               java.lang.String&nbsp;street,
+               int&nbsp;houseNumber,
+               java.lang.String&nbsp;zipCode,
+               java.util.Calendar&nbsp;birthday,
+               java.util.Calendar&nbsp;employmentDate,
+               double&nbsp;hourlyWage,
+               double&nbsp;extraWage)</code>
+<div class="block">Adds a new shift manager</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addSlot(java.util.Calendar, int)">addSlot</a></strong>(java.util.Calendar&nbsp;startingTime,
+       int&nbsp;productionPlanSerial)</code>
+<div class="block">Add a slot
+ You need to determine the shift according to the slot time</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addVehicle(java.lang.String, java.lang.String, int, int)">addVehicle</a></strong>(java.lang.String&nbsp;vin,
+          java.lang.String&nbsp;modelName,
+          int&nbsp;productionPlanSerial,
+          int&nbsp;orderNumber)</code>
+<div class="block">Adds a vehicle to the system only if it doesn't exists yet
+ Don't forget to retrieve the production plan
+ This method is used for adding a new vehicle.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addVehicleModel(int, java.lang.String, utils.E_VehicleType, int, int, int, boolean, double, java.util.Calendar)">addVehicleModel</a></strong>(int&nbsp;productionPlanTypeSerial,
+               java.lang.String&nbsp;modelName,
+               <a href="../utils/E_VehicleType.html" title="enum in utils">E_VehicleType</a>&nbsp;vehicleType,
+               int&nbsp;hp,
+               int&nbsp;topSpeed,
+               int&nbsp;numOfSeats,
+               boolean&nbsp;isAutomatic,
+               double&nbsp;productionCost,
+               java.util.Calendar&nbsp;enteredProduction)</code>
+<div class="block">Adds Vehicle model to the system only if it doesn't exists yet
+ Don't forget to retrieve the production plan type of this model</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addWarehouse(int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, int)">addWarehouse</a></strong>(int&nbsp;warehouseNumber,
+            java.lang.String&nbsp;country,
+            java.lang.String&nbsp;city,
+            java.lang.String&nbsp;street,
+            int&nbsp;houseNumber,
+            java.lang.String&nbsp;zipCode,
+            int&nbsp;maxPartsStored,
+            int&nbsp;maxVehiclesStored)</code>
+<div class="block">Adds warehouse to the system only if it doesn't exists yet</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addWorker(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double)">addWorker</a></strong>(java.lang.String&nbsp;id,
+         java.lang.String&nbsp;name,
+         java.lang.String&nbsp;country,
+         java.lang.String&nbsp;city,
+         java.lang.String&nbsp;street,
+         int&nbsp;houseNumber,
+         java.lang.String&nbsp;zipCode,
+         java.util.Calendar&nbsp;birthday,
+         java.util.Calendar&nbsp;employmentDate,
+         double&nbsp;hourlyWage)</code>
+<div class="block">Adds a new worker</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#addWorkStation(int, utils.E_PartCategory)">addWorkStation</a></strong>(int&nbsp;stationNumber,
+              <a href="../utils/E_PartCategory.html" title="enum in utils">E_PartCategory</a>&nbsp;cat)</code>
+<div class="block">Adds a work station to the system</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,<a href="../model/AbstractEmployee.html" title="class in model">AbstractEmployee</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getEmployees()">getEmployees</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static <a href="../model/SysData.html" title="class in model">SysData</a></code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Get the SysData instance</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,<a href="../model/Manufacturer.html" title="class in model">Manufacturer</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getManufacturers()">getManufacturers</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,<a href="../model/VehicleModel.html" title="class in model">VehicleModel</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getModels()">getModels</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/Order.html" title="class in model">Order</a>&lt;?,?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getOrders()">getOrders</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/PartType.html" title="class in model">PartType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getParts()">getParts</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/ProductionPlan.html" title="class in model">ProductionPlan</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getProductionPlans()">getProductionPlans</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/ProductionPlanType.html" title="class in model">ProductionPlanType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getProductionPlanTypes()">getProductionPlanTypes</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.util.Calendar,<a href="../model/Shift.html" title="class in model">Shift</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getShifts()">getShifts</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,<a href="../model/Vehicle.html" title="class in model">Vehicle</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getVehicles()">getVehicles</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/Warehouse.html" title="class in model">Warehouse</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getWarehouses()">getWarehouses</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Map&lt;java.lang.Integer,<a href="../model/WorkStation.html" title="class in model">WorkStation</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#getWorkStations()">getWorkStations</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeEmployee(java.lang.String)">removeEmployee</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Remove an employee
+ Needs to work for any sub-class
+ If he has shifts (HourlyEmployee), don't remove it</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeManufacturer(java.lang.String)">removeManufacturer</a></strong>(java.lang.String&nbsp;manufacturerName)</code>
+<div class="block">Remove a manufacturer from the system
+ If this manufacturer has orders or there are part types that can be made by this manufacturer - don't remove it</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeOrder(int)">removeOrder</a></strong>(int&nbsp;orderNumber)</code>
+<div class="block">REmove order
+ Only if it has no vehicle and no parts</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removePartType(int)">removePartType</a></strong>(int&nbsp;partNumber)</code>
+<div class="block">Remove part type
+ Only if it is not in any model, order and warehouse</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeProductionPlan(int)">removeProductionPlan</a></strong>(int&nbsp;serialNumber)</code>
+<div class="block">Remove production plan
+ Only if it has no vehicles and no slots</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeProductionPlanType(int)">removeProductionPlanType</a></strong>(int&nbsp;serialNumber)</code>
+<div class="block">Remove a production plan type
+ Only if there are no Work stations, production plans and models</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeShift(java.util.Calendar)">removeShift</a></strong>(java.util.Calendar&nbsp;startingTime)</code>
+<div class="block">Remove shift
+ If a worker is working in this shift, don't remove it
+ When removing a shift, don't forget to remove it from the shift manager, and remove all slots from production plans</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeVehicle(java.lang.String)">removeVehicle</a></strong>(java.lang.String&nbsp;vin)</code>
+<div class="block">Remove a vehicle
+ Only if it is not in any warehouse;
+ You must also remove it from it's order or production plan</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeVehicleModel(java.lang.String)">removeVehicleModel</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Remove a model
+ Only if there are no vehicle of this model and no manufacturer can produce it</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeWarehouse(int)">removeWarehouse</a></strong>(int&nbsp;warehouseNumber)</code>
+<div class="block">Remove a warehouse from the system
+ Only if it is empty and there are no guards</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../model/SysData.html#removeWorkStation(int)">removeWorkStation</a></strong>(int&nbsp;stationNumber)</code>
+<div class="block">Remove work station
+ Only if no workers can work on it and it is not in any production plan type</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="instance">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instance</h4>
+<pre>private static&nbsp;<a href="../model/SysData.html" title="class in model">SysData</a> instance</pre>
+<div class="block">SysData Singleton instance</div>
+</li>
+</ul>
+<a name="manufacturers">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>manufacturers</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.String,<a href="../model/Manufacturer.html" title="class in model">Manufacturer</a>&gt; manufacturers</pre>
+<div class="block">Manufacturers list</div>
+</li>
+</ul>
+<a name="orders">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>orders</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/Order.html" title="class in model">Order</a>&lt;?,?&gt;&gt; orders</pre>
+<div class="block">Orders list</div>
+</li>
+</ul>
+<a name="parts">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parts</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/PartType.html" title="class in model">PartType</a>&gt; parts</pre>
+<div class="block">Part types list</div>
+</li>
+</ul>
+<a name="productionPlans">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>productionPlans</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/ProductionPlan.html" title="class in model">ProductionPlan</a>&gt; productionPlans</pre>
+<div class="block">Production plans list</div>
+</li>
+</ul>
+<a name="productionPlanTypes">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>productionPlanTypes</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/ProductionPlanType.html" title="class in model">ProductionPlanType</a>&gt; productionPlanTypes</pre>
+<div class="block">Production plan types list</div>
+</li>
+</ul>
+<a name="models">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>models</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.String,<a href="../model/VehicleModel.html" title="class in model">VehicleModel</a>&gt; models</pre>
+<div class="block">Vehicle models list</div>
+</li>
+</ul>
+<a name="vehicles">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>vehicles</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.String,<a href="../model/Vehicle.html" title="class in model">Vehicle</a>&gt; vehicles</pre>
+<div class="block">Vehicles list</div>
+</li>
+</ul>
+<a name="warehouses">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>warehouses</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/Warehouse.html" title="class in model">Warehouse</a>&gt; warehouses</pre>
+<div class="block">Warehouses list</div>
+</li>
+</ul>
+<a name="workStations">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>workStations</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.Integer,<a href="../model/WorkStation.html" title="class in model">WorkStation</a>&gt; workStations</pre>
+<div class="block">Work stations list</div>
+</li>
+</ul>
+<a name="shifts">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shifts</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.util.Calendar,<a href="../model/Shift.html" title="class in model">Shift</a>&gt; shifts</pre>
+<div class="block">Shift list</div>
+</li>
+</ul>
+<a name="employees">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>employees</h4>
+<pre>private&nbsp;java.util.HashMap&lt;java.lang.String,<a href="../model/AbstractEmployee.html" title="class in model">AbstractEmployee</a>&gt; employees</pre>
+<div class="block">Employees list</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SysData()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SysData</h4>
+<pre>private&nbsp;SysData()</pre>
+<div class="block">SysData constructor</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getInstance()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstance</h4>
+<pre>protected static&nbsp;<a href="../model/SysData.html" title="class in model">SysData</a>&nbsp;getInstance()</pre>
+<div class="block">Get the SysData instance</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>Instance of the SysData</dd></dl>
+</li>
+</ul>
+<a name="getManufacturers()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getManufacturers</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,<a href="../model/Manufacturer.html" title="class in model">Manufacturer</a>&gt;&nbsp;getManufacturers()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the manufacturers</dd></dl>
+</li>
+</ul>
+<a name="getOrders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrders</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/Order.html" title="class in model">Order</a>&lt;?,?&gt;&gt;&nbsp;getOrders()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the orders</dd></dl>
+</li>
+</ul>
+<a name="getParts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParts</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/PartType.html" title="class in model">PartType</a>&gt;&nbsp;getParts()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the parts</dd></dl>
+</li>
+</ul>
+<a name="getProductionPlans()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProductionPlans</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/ProductionPlan.html" title="class in model">ProductionPlan</a>&gt;&nbsp;getProductionPlans()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the productionPlans</dd></dl>
+</li>
+</ul>
+<a name="getProductionPlanTypes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProductionPlanTypes</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/ProductionPlanType.html" title="class in model">ProductionPlanType</a>&gt;&nbsp;getProductionPlanTypes()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the productionPlanTypes</dd></dl>
+</li>
+</ul>
+<a name="getModels()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModels</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,<a href="../model/VehicleModel.html" title="class in model">VehicleModel</a>&gt;&nbsp;getModels()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the models</dd></dl>
+</li>
+</ul>
+<a name="getVehicles()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVehicles</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,<a href="../model/Vehicle.html" title="class in model">Vehicle</a>&gt;&nbsp;getVehicles()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the vehicles</dd></dl>
+</li>
+</ul>
+<a name="getWarehouses()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWarehouses</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/Warehouse.html" title="class in model">Warehouse</a>&gt;&nbsp;getWarehouses()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the warehouses</dd></dl>
+</li>
+</ul>
+<a name="getWorkStations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWorkStations</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../model/WorkStation.html" title="class in model">WorkStation</a>&gt;&nbsp;getWorkStations()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the workStations</dd></dl>
+</li>
+</ul>
+<a name="getShifts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getShifts</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.util.Calendar,<a href="../model/Shift.html" title="class in model">Shift</a>&gt;&nbsp;getShifts()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the shifts</dd></dl>
+</li>
+</ul>
+<a name="getEmployees()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEmployees</h4>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,<a href="../model/AbstractEmployee.html" title="class in model">AbstractEmployee</a>&gt;&nbsp;getEmployees()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the employees</dd></dl>
+</li>
+</ul>
+<a name="addManufacturer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addManufacturer</h4>
+<pre>protected&nbsp;boolean&nbsp;addManufacturer(java.lang.String&nbsp;name,
+                      java.lang.String&nbsp;country,
+                      java.lang.String&nbsp;city,
+                      java.lang.String&nbsp;street,
+                      int&nbsp;houseNumber,
+                      java.lang.String&nbsp;zipCode,
+                      double&nbsp;profitPercentage)</pre>
+<div class="block">Adds manufacturer to the system only if it doesn't exist yet</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - Manufacturer name</dd><dd><code>country</code> - Address country</dd><dd><code>city</code> - Address city</dd><dd><code>street</code> - Address street</dd><dd><code>houseNumber</code> - Address house number</dd><dd><code>zipCode</code> - Address ZIP code</dd><dd><code>profitPercentage</code> - Manufacturer percentage of order price added as income</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addWarehouse(int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWarehouse</h4>
+<pre>protected&nbsp;boolean&nbsp;addWarehouse(int&nbsp;warehouseNumber,
+                   java.lang.String&nbsp;country,
+                   java.lang.String&nbsp;city,
+                   java.lang.String&nbsp;street,
+                   int&nbsp;houseNumber,
+                   java.lang.String&nbsp;zipCode,
+                   int&nbsp;maxPartsStored,
+                   int&nbsp;maxVehiclesStored)</pre>
+<div class="block">Adds warehouse to the system only if it doesn't exists yet</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>warehouseNumber</code> - Warehouse serial number</dd><dd><code>country</code> - Address country</dd><dd><code>city</code> - Address city</dd><dd><code>street</code> - Address street</dd><dd><code>houseNumber</code> - Address house number</dd><dd><code>zipCode</code> - Address ZIP code</dd><dd><code>maxPartsStored</code> - Maximum number of parts stored in this warehouse</dd><dd><code>maxVehiclesStored</code> - Maximum number of vehicles stored in this warehouse</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addProductionPlanType(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addProductionPlanType</h4>
+<pre>protected&nbsp;boolean&nbsp;addProductionPlanType(int&nbsp;serialNumber,
+                            int&nbsp;numberOfSlots)</pre>
+<div class="block">Adds production plan type to the system only if it doesn't exists yet</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>serialNumber</code> - Production plan type serial number</dd><dd><code>numberOfSlots</code> - Number of slots</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addProductionPlan(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addProductionPlan</h4>
+<pre>protected&nbsp;boolean&nbsp;addProductionPlan(int&nbsp;serialNumber,
+                        int&nbsp;typeSerialNumber)</pre>
+<div class="block">Adds production plan to the system only if it doesn't exists yet
+ Don't forget to retrieve the Production plan type</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>serialNumber</code> - Production plan serial number</dd><dd><code>typeSerialNumber</code> - Production plan type serial number, this production plan will be of this type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addVehicleModel(int, java.lang.String, utils.E_VehicleType, int, int, int, boolean, double, java.util.Calendar)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addVehicleModel</h4>
+<pre>protected&nbsp;boolean&nbsp;addVehicleModel(int&nbsp;productionPlanTypeSerial,
+                      java.lang.String&nbsp;modelName,
+                      <a href="../utils/E_VehicleType.html" title="enum in utils">E_VehicleType</a>&nbsp;vehicleType,
+                      int&nbsp;hp,
+                      int&nbsp;topSpeed,
+                      int&nbsp;numOfSeats,
+                      boolean&nbsp;isAutomatic,
+                      double&nbsp;productionCost,
+                      java.util.Calendar&nbsp;enteredProduction)</pre>
+<div class="block">Adds Vehicle model to the system only if it doesn't exists yet
+ Don't forget to retrieve the production plan type of this model</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>productionPlanTypeSerial</code> - Serial number of the production plan needed to build this vehicle</dd><dd><code>modelName</code> - Name of this model</dd><dd><code>vehicleType</code> - Type of this model</dd><dd><code>hp</code> - Model Horse power</dd><dd><code>topSpeed</code> - Model top speed in KPH</dd><dd><code>numOfSeats</code> - Number of seats in this model</dd><dd><code>isAutomatic</code> - True if this model has an automatic gear box</dd><dd><code>productionCost</code> - Cost of producing one vehicle</dd><dd><code>enteredProduction</code> - When did this model entered production?</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../utils/E_VehicleType.html" title="enum in utils"><code>E_VehicleType</code></a></dd></dl>
+</li>
+</ul>
+<a name="addPartType(int, java.lang.String, utils.E_PartCategory, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPartType</h4>
+<pre>protected&nbsp;boolean&nbsp;addPartType(int&nbsp;partNumber,
+                  java.lang.String&nbsp;partName,
+                  <a href="../utils/E_PartCategory.html" title="enum in utils">E_PartCategory</a>&nbsp;category,
+                  double&nbsp;productionCost)</pre>
+<div class="block">Adds part type to the system only if it doesn't exists yet</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>partNumber</code> - Part type serial number</dd><dd><code>partName</code> - Name of the part</dd><dd><code>category</code> - Category of the part</dd><dd><code>productionCost</code> - Cost to produce this part</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../utils/E_PartCategory.html" title="enum in utils"><code>E_PartCategory</code></a></dd></dl>
+</li>
+</ul>
+<a name="addOrder(int, java.lang.String, java.lang.String, java.util.Calendar)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addOrder</h4>
+<pre>protected&nbsp;boolean&nbsp;addOrder(int&nbsp;orderNumber,
+               java.lang.String&nbsp;orderedFrom,
+               java.lang.String&nbsp;orderedTo,
+               java.util.Calendar&nbsp;dueDate)</pre>
+<div class="block">Adds order to the system only if it doesn't exists yet
+ Don't forget to retrieve the manufacturer</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>orderNumber</code> - Order number</dd><dd><code>orderedFrom</code> - Ordering side</dd><dd><code>orderedTo</code> - Receiving side</dd><dd><code>dueDate</code> - When the order needs to be delivered</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addVehicle(java.lang.String, java.lang.String, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addVehicle</h4>
+<pre>protected&nbsp;boolean&nbsp;addVehicle(java.lang.String&nbsp;vin,
+                 java.lang.String&nbsp;modelName,
+                 int&nbsp;productionPlanSerial,
+                 int&nbsp;orderNumber)</pre>
+<div class="block">Adds a vehicle to the system only if it doesn't exists yet
+ Don't forget to retrieve the production plan
+ This method is used for adding a new vehicle.
+ A new vehicle can be added in 2 ways:
+ - Producing it locally (production plan is needed, order will be -1)
+ - Ordering it from a manufacturer (Order is needed, production plan will be -1)</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>vin</code> - Vehicle identification number (Chassis number)</dd><dd><code>modelName</code> - Name of vehicle model</dd><dd><code>productionPlanSerial</code> - Serial number of production plan (-1 if in order)</dd><dd><code>orderNumber</code> - Order number (-1 if in production plan)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addWorkStation(int, utils.E_PartCategory)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkStation</h4>
+<pre>protected&nbsp;boolean&nbsp;addWorkStation(int&nbsp;stationNumber,
+                     <a href="../utils/E_PartCategory.html" title="enum in utils">E_PartCategory</a>&nbsp;cat)</pre>
+<div class="block">Adds a work station to the system</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stationNumber</code> - Work station number</dd><dd><code>cat</code> - Part category of the work station</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addGuard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addGuard</h4>
+<pre>protected&nbsp;boolean&nbsp;addGuard(java.lang.String&nbsp;id,
+               java.lang.String&nbsp;name,
+               java.lang.String&nbsp;country,
+               java.lang.String&nbsp;city,
+               java.lang.String&nbsp;street,
+               int&nbsp;houseNumber,
+               java.lang.String&nbsp;zipCode,
+               java.util.Calendar&nbsp;birthday,
+               java.util.Calendar&nbsp;employmentDate,
+               double&nbsp;monthlySalary,
+               int&nbsp;warehouseNumber)</pre>
+<div class="block">Adds a new guard to the system</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - Guard id</dd><dd><code>name</code> - Guard name</dd><dd><code>country</code> - Country</dd><dd><code>city</code> - City</dd><dd><code>street</code> - Street name</dd><dd><code>houseNumber</code> - House number</dd><dd><code>zipCode</code> - Zip code</dd><dd><code>birthday</code> - Date of birth</dd><dd><code>employmentDate</code> - Employment date</dd><dd><code>monthlySalary</code> - Monthly salary</dd><dd><code>warehouseNumber</code> - Warehouse where he is working</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addShiftManager(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addShiftManager</h4>
+<pre>protected&nbsp;boolean&nbsp;addShiftManager(java.lang.String&nbsp;id,
+                      java.lang.String&nbsp;name,
+                      java.lang.String&nbsp;country,
+                      java.lang.String&nbsp;city,
+                      java.lang.String&nbsp;street,
+                      int&nbsp;houseNumber,
+                      java.lang.String&nbsp;zipCode,
+                      java.util.Calendar&nbsp;birthday,
+                      java.util.Calendar&nbsp;employmentDate,
+                      double&nbsp;hourlyWage,
+                      double&nbsp;extraWage)</pre>
+<div class="block">Adds a new shift manager</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - Shift manager id</dd><dd><code>name</code> - Shift manager name</dd><dd><code>country</code> - Country</dd><dd><code>city</code> - City</dd><dd><code>street</code> - Street name</dd><dd><code>houseNumber</code> - House number</dd><dd><code>zipCode</code> - Zip code</dd><dd><code>birthday</code> - Date of birth</dd><dd><code>employmentDate</code> - Employment date</dd><dd><code>hourlyWage</code> - Wage per hour</dd><dd><code>extraWage</code> - Extra wage added every month</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addWorker(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.util.Calendar, java.util.Calendar, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorker</h4>
+<pre>protected&nbsp;boolean&nbsp;addWorker(java.lang.String&nbsp;id,
+                java.lang.String&nbsp;name,
+                java.lang.String&nbsp;country,
+                java.lang.String&nbsp;city,
+                java.lang.String&nbsp;street,
+                int&nbsp;houseNumber,
+                java.lang.String&nbsp;zipCode,
+                java.util.Calendar&nbsp;birthday,
+                java.util.Calendar&nbsp;employmentDate,
+                double&nbsp;hourlyWage)</pre>
+<div class="block">Adds a new worker</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - Worker id</dd><dd><code>name</code> - Worker name</dd><dd><code>country</code> - Country</dd><dd><code>city</code> - City</dd><dd><code>street</code> - Street name</dd><dd><code>houseNumber</code> - House number</dd><dd><code>zipCode</code> - Zip code</dd><dd><code>birthday</code> - Date of birth</dd><dd><code>employmentDate</code> - Employment date</dd><dd><code>hourlyWage</code> - Wage per hour</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addShift(java.util.Calendar, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addShift</h4>
+<pre>protected&nbsp;boolean&nbsp;addShift(java.util.Calendar&nbsp;startingTime,
+               java.lang.String&nbsp;ShiftManagerId)</pre>
+<div class="block">Adds shift to the system</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>startingTime</code> - Starting time</dd><dd><code>ShiftManagerId</code> - Manager for this shift</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="addSlot(java.util.Calendar, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSlot</h4>
+<pre>protected&nbsp;boolean&nbsp;addSlot(java.util.Calendar&nbsp;startingTime,
+              int&nbsp;productionPlanSerial)</pre>
+<div class="block">Add a slot
+ You need to determine the shift according to the slot time</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>startingTime</code> - </dd><dd><code>productionPlanSerial</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if added successfully</dd></dl>
+</li>
+</ul>
+<a name="removeManufacturer(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeManufacturer</h4>
+<pre>protected&nbsp;boolean&nbsp;removeManufacturer(java.lang.String&nbsp;manufacturerName)</pre>
+<div class="block">Remove a manufacturer from the system
+ If this manufacturer has orders or there are part types that can be made by this manufacturer - don't remove it</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>manufacturerName</code> - Manufacturer to remove</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeWarehouse(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWarehouse</h4>
+<pre>protected&nbsp;boolean&nbsp;removeWarehouse(int&nbsp;warehouseNumber)</pre>
+<div class="block">Remove a warehouse from the system
+ Only if it is empty and there are no guards</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>warehouseNumber</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeProductionPlanType(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeProductionPlanType</h4>
+<pre>protected&nbsp;boolean&nbsp;removeProductionPlanType(int&nbsp;serialNumber)</pre>
+<div class="block">Remove a production plan type
+ Only if there are no Work stations, production plans and models</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>serialNumber</code> - Serial number of the production plan type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeProductionPlan(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeProductionPlan</h4>
+<pre>protected&nbsp;boolean&nbsp;removeProductionPlan(int&nbsp;serialNumber)</pre>
+<div class="block">Remove production plan
+ Only if it has no vehicles and no slots</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>serialNumber</code> - production plan serial number</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeVehicleModel(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeVehicleModel</h4>
+<pre>protected&nbsp;boolean&nbsp;removeVehicleModel(java.lang.String&nbsp;name)</pre>
+<div class="block">Remove a model
+ Only if there are no vehicle of this model and no manufacturer can produce it</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - Name of the model</dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removePartType(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removePartType</h4>
+<pre>protected&nbsp;boolean&nbsp;removePartType(int&nbsp;partNumber)</pre>
+<div class="block">Remove part type
+ Only if it is not in any model, order and warehouse</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>partNumber</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeOrder(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeOrder</h4>
+<pre>protected&nbsp;boolean&nbsp;removeOrder(int&nbsp;orderNumber)</pre>
+<div class="block">REmove order
+ Only if it has no vehicle and no parts</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>orderNumber</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeVehicle(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeVehicle</h4>
+<pre>protected&nbsp;boolean&nbsp;removeVehicle(java.lang.String&nbsp;vin)</pre>
+<div class="block">Remove a vehicle
+ Only if it is not in any warehouse;
+ You must also remove it from it's order or production plan</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>vin</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeWorkStation(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkStation</h4>
+<pre>protected&nbsp;boolean&nbsp;removeWorkStation(int&nbsp;stationNumber)</pre>
+<div class="block">Remove work station
+ Only if no workers can work on it and it is not in any production plan type</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stationNumber</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeEmployee(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeEmployee</h4>
+<pre>protected&nbsp;boolean&nbsp;removeEmployee(java.lang.String&nbsp;id)</pre>
+<div class="block">Remove an employee
+ Needs to work for any sub-class
+ If he has shifts (HourlyEmployee), don't remove it</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+<a name="removeShift(java.util.Calendar)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>removeShift</h4>
+<pre>protected&nbsp;boolean&nbsp;removeShift(java.util.Calendar&nbsp;startingTime)</pre>
+<div class="block">Remove shift
+ If a worker is working in this shift, don't remove it
+ When removing a shift, don't forget to remove it from the shift manager, and remove all slots from production plans</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>startingTime</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if removed successfully</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SysData.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-files/index-1.html">Index</a></li>
+<li><a href="../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../model/Slot.html" title="class in model"><span class="strong">Prev Class</span></a></li>
+<li><a href="../model/Vehicle.html" title="class in model"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../index.html?model/SysData.html" target="_top">Frames</a></li>
+<li><a href="SysData.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>
