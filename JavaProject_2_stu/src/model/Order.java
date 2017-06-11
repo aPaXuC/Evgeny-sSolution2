@@ -17,7 +17,7 @@ public class Order<F, T> implements Cloneable{
 	private HashMap<PartType, Integer> parts;
 	private HashSet<Vehicle> vehicles;
 	
-	public Order(int orderNumber, F orderedFrom, T orderedTo, Calendar dueDate) {
+	protected Order(int orderNumber, F orderedFrom, T orderedTo, Calendar dueDate) {
 		super();
 		this.orderNumber = orderNumber;
 		this.orderedFrom = orderedFrom;
