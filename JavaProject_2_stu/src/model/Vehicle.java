@@ -90,7 +90,7 @@ public class Vehicle implements Cloneable{
 	
 	protected Object clone() {
 		if (productionPlan == null)
-			return new Vehicle(vin, model, order);
+			return new Vehicle(vin, (VehicleModel)model.clone(), (Order<?, ?>)order.clone());
 		return new Vehicle(vin, (VehicleModel)model.clone(), (ProductionPlan)productionPlan.clone());
 	}
 }

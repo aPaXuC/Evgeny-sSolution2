@@ -195,9 +195,7 @@ public class SysData {
 		if (productionPlanTypes.containsKey(serialNumber))
 			return false;
 		ProductionPlanType ppt = new ProductionPlanType(serialNumber, numberOfSlots);
-		ProductionPlanType ans = productionPlanTypes.put(serialNumber, ppt);
-		if (ans != null)
-			return false;
+		productionPlanTypes.put(serialNumber, ppt);
 		return true;
 	}
 	/**
