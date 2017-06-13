@@ -101,7 +101,7 @@ public class Queries {
 			if (w.getMaxPartsStored() > 0)
 				for (Entry<PartType, Integer> entry : w.getParts().entrySet())
 					if (result.containsKey(entry.getKey())) {
-						if (result.get(entry.getKey()) == entry.getValue())
+						if (result.get(entry.getKey()) <= entry.getValue())
 							result.remove(entry.getKey());
 						else result.put(entry.getKey(), result.get(entry.getKey()) - entry.getValue());
 					}
