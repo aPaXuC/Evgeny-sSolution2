@@ -73,7 +73,7 @@ public class Order<F, T> implements Cloneable{
 			return false;
 		if (parts.get(pt) > amount)
 			parts.put(pt, parts.get(pt) - amount);
-		if (parts.get(pt) == amount)
+		else if (parts.get(pt) == amount)
 			parts.remove(pt);
 		return true;
 	}
