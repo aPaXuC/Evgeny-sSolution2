@@ -182,6 +182,7 @@ public class Queries {
 				return ((Integer)ao1).compareTo(ao2);
 			}
 		});
+		if (k >= result.size()) return result;
 		ArrayList<VehicleModel> res = new ArrayList<>();
 		for (int i = 0; i < k; i++)
 			res.add(result.get(i));
